@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "95685533466",
+    "project_id": "themewashoppe-cac75",
+    "storage_bucket": "themewashoppe-cac75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95685533466:android:aa34ba64230615b62e56a3",
+        "android_client_info": {
+          "package_name": "com.SwastikRice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcFTzeOJ1D_InXtWOZe3YqbcSf08Gs-7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
