@@ -48,7 +48,7 @@ const Layout = props => {
   const [connectionStatus, setConnectionStatus] = useState(null);
   const [isSelectionModeEnabled, setIsSelectionModeEnabled] = useState(false);
   const route = useRoute();
-
+console.log('props', props)
   const canGoBack = () => {
     navigation.goBack();
   };
@@ -167,7 +167,7 @@ const Layout = props => {
           </UI.Flex>
         ) : null}
 
-        {props.sBar !== undefined ? (
+        {/* {props.sBar !== undefined ? (
           <View
             style={{
               justifyContent: 'space-between',
@@ -220,16 +220,9 @@ const Layout = props => {
                 </UI.Text>
               </TouchableOpacity>
             </View>
-            {/* <AutoComplete
-              w={'95%'}
-              h={'100%'}
-              options={options}
-              defaultValue={''} // optional default Value now only for text
-              selectItem={selectItem}
-              placeholder="Search"
-            /> */}
+           
           </View>
-        ) : null}
+        ) : null} */}
         {props.children}
 
         <Modal

@@ -357,7 +357,18 @@ function DrawerView(props) {
     </SafeAreaView>
   );
 }
-
+const NoRippleButton = props => {
+  return (
+    <Pressable
+      {...props}
+      android_ripple={null}
+      style={({pressed}) => [
+        props.style,
+        {opacity: pressed ? 0.6 : 1}, // subtle feedback instead of gray bg
+      ]}
+    />
+  );
+};
 const BottomNavigator = props => {
   const {cartTotalAmount, cartTotalQuantity} = useSelector(state => state.cart);
   const {isLogin, otpDetails} = useSelector(state => state.login);
@@ -372,6 +383,7 @@ const BottomNavigator = props => {
       // }}
       screenOptions={{
         tabBarShowLabel: false,
+          tabBarButton: props => <NoRippleButton {...props} />,
         // showLabel: false,
         tabBarStyle: [
           {
